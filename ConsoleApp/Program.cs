@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Text;
 using StringFunctions;
+using StringBuilderFunctions;
 
 namespace ConsoleApp
 {
     class Program
     {
         static void Main()
-        {
+        { 
+            Console.WriteLine("String functions : ");
+            Console.WriteLine("");
+        
             string firstname = "Siddesh";
             string lastname = "Bagare";
             string str1 = "abcdefg";
@@ -103,6 +108,27 @@ namespace ConsoleApp
             obj.TrimStart();//TrimTrimStart
 
             obj.TrimEnd();//TrimEnd
+
+            ///////////////////////////////////////////////////////////////////////////////////////////
+
+            Console.WriteLine("");
+            Console.WriteLine("StringBuilder functions : ");
+            Console.WriteLine("");
+
+            SBFunctions ob = new SBFunctions();//StringBuilder class object created 
+
+            StringBuilder sb1 = new StringBuilder("Siddesh", 10);
+            StringBuilder sb2 = new StringBuilder("Bagare", 10);
+
+            ob.Append(sb1);//Append
+
+            ob.AppendFormat(sb2);//AppendFormat
+
+            ob.Insert(sb1);//Insert
+
+            ob.Remove(sb2);//Remove
+
+            ob.Replace(sb1);//Replace
 
             Console.ReadLine();
         }

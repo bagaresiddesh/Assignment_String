@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace StringFunctions
 {
@@ -256,6 +255,5 @@ namespace StringFunctions
             Console.WriteLine("Before TrimEnd : {0}", str1);
             Console.WriteLine("After : {0}", str1.TrimEnd('0'));
         }
-
     }
 }
